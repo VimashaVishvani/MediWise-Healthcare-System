@@ -21,7 +21,7 @@ const getUserProfile = async (req, res) => {
   }
 };
 
-// Get All Users (Admin Use)
+// Get All Users (Admin Use.)
 const getAllUsers = async (req, res) => {
   try {
     const users = await User.find().select("-password");
