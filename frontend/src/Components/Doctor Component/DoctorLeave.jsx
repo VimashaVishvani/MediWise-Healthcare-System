@@ -72,6 +72,7 @@ const DoctorLeave = () => {
     }
   }, []);
 
+  //Doctor's Leave  Filter
   useEffect(() => {
     if(doctor){
     fetch(`http://localhost:5000/api/doctorLeave/filterBydoc/${doctor._id}`)
